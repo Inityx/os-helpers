@@ -2,7 +2,7 @@
 This documentation outlines my setup and protocols for grading assignments 1 through 5 in OSU's CS 344.
 The assignments are graded on `os-class.engr.oregonstate.edu` or `eos-class.engr.oregonstate.edu`, the latter being for the eCampus version of the class.
 
-# Individual Instructions
+## Individual Instructions
 After performing the setup outlined in [Universal Instructions](#universal-instructions), these instructions will guide you through the specific setup for each assignment.
 
 * [Assignment 1](assn1/README.md)
@@ -11,8 +11,8 @@ After performing the setup outlined in [Universal Instructions](#universal-instr
 * [Assignment 4](assn4/README.md)
 * [Assignment 5](assn5/README.md)
 
-# Universal instructions
-## Directory Structure
+## Universal instructions
+### Directory Structure
 The directory structure I recommend using (and will use for all of the examples in this documentation) is as follows:
 
 ```
@@ -36,7 +36,7 @@ You can automatically generate this structure using
     done
 ```
 
-## Downloading Submissions
+### Downloading Submissions
 You must transfer the assignment submissions from Canvas to the grading computer.
 I recommend using SSHFS for this.
 From your local machine:
@@ -54,7 +54,7 @@ The temporary mount can now be unmounted:
     rmdir ~/engr-mount
 ```
 
-## Extracting Submissions
+### Extracting Submissions
 The submissions must then be extracted; this is performed on `os-class` as
 
 ```sh
