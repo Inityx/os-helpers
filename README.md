@@ -1,6 +1,6 @@
 # Grading CS 344
 This documentation outlines my setup and protocols for grading assignments 1 through 5 in OSU's CS 344.
-The assignments are graded on `os-class.engr.oregonstate.edu` or `eos-class.engr.oregonstate.edu`, the latter being for the eCampus version of the class.
+The assignments are graded on [os-class] or [eos-class], the latter being for the eCampus version of the class.
 
 ## Individual Instructions
 After performing the setup outlined in [Universal Instructions](#universal-instructions), these instructions will guide you through the specific setup for each assignment.
@@ -55,7 +55,7 @@ The temporary mount can now be unmounted:
 ```
 
 ### Extracting Submissions
-The submissions must then be extracted; this is performed on `os-class` as
+The submissions must then be extracted; this is performed on [os-class] as
 
 ```sh
     cd ~/grading/assn${i}/
@@ -84,3 +84,6 @@ You must use exactly this syntax for directory enumeration, as anything else is 
         unzip *.zip
     done
 ```
+
+[os-class]: http://os-class.engr.oregonstate.edu
+[eos-class]: http://eos-class.engr.oregonstate.edu
