@@ -33,16 +33,16 @@ You must now transfer the assignment submissions from Canvas to the grading comp
 From your local machine:
 
 ```sh
-    mkdir engr-mount
-    sshfs os-class.engr.oregonstate.edu:grading engr-mount
+    mkdir ~/engr-mount
+    sshfs os-class.engr.oregonstate.edu:grading ~/engr-mount
 ```
 
 You can then download the submissions from Canvas and save the zip as `~/engr-mount/assn${i}_submissions.zip`.
 The temporary mount can now be unmounted:
 
 ```sh
-    sudo umount engr-mount
-    rmdir engr-mount
+    sudo umount ~/engr-mount
+    rmdir ~/engr-mount
 ```
 
 ## Extracting Submissions
@@ -53,7 +53,7 @@ The submissions must then be extracted; this is performed on `os-class` as
     unzip ../../assn${i}_submissions.zip
 ```
 
-Then to organize submissions into folders:
+Then, to organize submissions into folders:
 
 ```sh
     cd ~/grading/assn${i}
@@ -67,9 +67,7 @@ It is at this point I would recommend removing submissions that you do not need 
 This can be easily accomplished with `vidir` using a block delete (`Shift-V`, select, `d`).
 
 If the submissions themselves have been zipped, you must unzip them.
-<aside class="warning">
-    You must use exactly this syntax for directory enumeration, as anything else is very error-prone and can screw up your directory structure.
-</aside>
+You must use exactly this syntax for directory enumeration, as anything else is very error-prone and can ruin your directory structure.
 
 ```sh
     for dir in ~/grading/assn${i}/*; do
