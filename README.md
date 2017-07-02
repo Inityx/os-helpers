@@ -4,8 +4,18 @@ Helper scripts and instructions for grading OSU's CS 344
 This documentation outlines my setup and protocols for grading assignments 1-5.
 The assignments are graded on `os-class.engr.oregonstate.edu` or `eos-class.engr.oregonstate.edu`, the latter being for the eCampus version of the class.
 
+# Individual Instructions
+After performing the setup outlined in [Universal Instructions](#universal-instructions), these instructions will guide you through the specific setup for each assignment.
+
+* [Assignment 1](assn1/README.md)
+* [Assignment 2](assn2/README.md)
+* [Assignment 3](assn3/README.md)
+* [Assignment 4](assn4/README.md)
+* [Assignment 5](assn5/README.md)
+
+# Universal instructions
 ## Directory Structure
-The directory structure I would recommend using (and will use for all of the examples in this documentation) is as follows:
+The directory structure I recommend using (and will use for all of the examples in this documentation) is as follows:
 
 ```
     user@os-class:~$ tree grading/
@@ -20,7 +30,7 @@ The directory structure I would recommend using (and will use for all of the exa
     user@os-class:~$ 
 ```
 
-You can automatically generate this structure using the command
+You can automatically generate this structure using
 
 ```sh
     for i in $(seq 1 5); do
@@ -29,7 +39,8 @@ You can automatically generate this structure using the command
 ```
 
 ## Downloading Submissions
-You must now transfer the assignment submissions from Canvas to the grading computer; I recommend using SSHFS.
+You must transfer the assignment submissions from Canvas to the grading computer.
+I recommend using SSHFS for this.
 From your local machine:
 
 ```sh
