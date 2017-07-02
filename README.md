@@ -1,7 +1,5 @@
-# os-helpers
-Helper scripts and instructions for grading OSU's CS 344
-
-This documentation outlines my setup and protocols for grading assignments 1-5.
+# Grading CS 344
+This documentation outlines my setup and protocols for grading assignments 1 through 5 in OSU's CS 344.
 The assignments are graded on `os-class.engr.oregonstate.edu` or `eos-class.engr.oregonstate.edu`, the latter being for the eCampus version of the class.
 
 # Individual Instructions
